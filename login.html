@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Exemplo</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custom styles for this template -->
+  <link href="css/shop-homepage.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Projeto Exemplo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <div id="login">
+                            </div>
+                            <div id="logout">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+	<br>
+	<main role="main" class="container">
+      <div class="jumbotron">
+        <h1>Navbar exemplo</h1>
+        <p class="lead">Este exemplo é um exercício rápido para ilustrar como funciona a barra de navegação alinhada no topo. Conforme você rola, esta barra de navegação permanece em sua posição original e se move com o resto da página..</p>
+      
+      </div>
+    </main>
+    <!-- /.container -->
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Autenticação</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div>
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active text-dark" id="pills-login-tab" data-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login"
+                                   aria-selected="true">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" id="pills-register-tab" data-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register"
+                                   aria-selected="false">Registre-se</a>
+                            </li>
+                        </ul>
+                        <!-- Nav tabs -->
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
+                                <form class="form-signin">
+                                    <div class="card-body">
+                                        <h3>Login</h3>
+                                        <div id="erroLogin"></div>
+                                        <div class="form-group">
+                                            <input type="email" id="emailInput" class="form-control" placeholder="E-mail" required autofocus>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" id="passwordInput" class="form-control" placeholder="Senha" maxlength="20" required>
+                                        </div>
+                                        <button class="btn btn-lg btn-dark btn-block" id="authEmailPassButton" type="button">Entrar</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div id="pills-register" class="tab-pane fade" role="tabpanel" aria-labelledby="pills-register-tab">
+                                <form class="form-signin">
+                                    <div class="card-body">
+                                        <h3>Registre-se</h3>
+                                        <div id="erroRegister"></div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <input type="text" id="firstNameRegisterInput" class="form-control" placeholder="Nome" maxlength="20" required autofocus>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <input type="text" id="lastNameRegisterInput" class="form-control" placeholder="Sobrenome" maxlength="40">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" id="emailRegisterInput" class="form-control" placeholder="E-mail">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" id="passwordRegisterInput" class="form-control" placeholder="Informe a senha" maxlength="20" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="password" id="passwordConfirmRegisterInput" class="form-control" placeholder="Confirme a senha" maxlength="20" required>
+                                        </div>
+
+                                        <button class="btn btn-lg btn-dark btn-block" id="createUserButton" type="button">Cadastre-se gratuitamente</button>
+                                        <hr />
+
+                                    </div>
+                                </form>
+                            </div>
+
+                            <ul class="list-inline text-center">
+                                <!--<li class="list-inline-item">
+                                    <button class="btn btn-github" id="authGithubButton" title="Fazer login com Github" type="button" style="font-size:14px"><i class="fab fa-github mr-2"></i> Login Github</button>
+                                </li>-->
+                                <li class="list-inline-item">
+                                    <button class="btn btn-google" id="authGoogleButton" title="Fazer login com Google" type="button" style="font-size:14px"><i class="fa fa-google"></i> Login Google</button>
+                                </li>
+                                <li class="list-inline-item">
+                                    <button class="btn btn-facebook" id="authFacebookButton" title="Fazer login com Facebook" type="button" style="font-size:14px"><i class="fa fa-facebook"></i> Login Facebook</button>
+                                </li>
+                            </ul>
+                            <hr class="my-4">
+                            <div class="form-label-group">
+                                <a class="btn btn-link text-primary" id="lnkForgetPassword" href="#">Esqueceu sua senha?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Esqueceu sua senha</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div>
+
+                        <div id="forget-password">
+                            <form class="form-forget">
+                                <div class="card-body">
+                                    <h3>Esqueceu a senha?</h3>
+                                    <div id="erroRegisterForget"></div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <input type="email" id="emailInputForget" class="form-control" placeholder="Informe seu e-mail" maxlength="20" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-lg btn-dark btn-block" id="authForgetPassword" type="button">Confirmar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; 2020</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/authentication.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
