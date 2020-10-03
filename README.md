@@ -22,7 +22,7 @@ JavaScript com Firebase
 ## Instalacao
 
 - Criar o projeto web de autenticação no Firebase `[https://console.firebase.google.com/]`
-- Obter os dados de configuração `firebaseConfig` e adicionar ao arquivo `js\app.js´
+- Obter os dados de configuração `firebaseConfig` e adicionar ao arquivo `js\app.js`
 
 
 ---
