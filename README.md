@@ -1,5 +1,5 @@
 # Firebase Authentication
-- Template de autenticação com firebase utilizando JavaScript
+Template de autenticação com firebase utilizando JavaScript
 
 ---
 
